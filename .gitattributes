@@ -1,0 +1,8 @@
+*.gnuplot linguist-detectable=false
+*.Gnuplot linguist-detectable=false
+*.gp linguist-detectable=false
+*.gnu linguist-detectable=false
+*.p linguist-detectable=false
+*.plot linguist-detectable=false
+*.plt linguist-detectable=false
+.geolife/** linguist-vendored
