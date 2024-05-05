@@ -11,7 +11,6 @@ import random
 from math import radians, cos, sin, asin, sqrt, pi, atan2, degrees
 import geopandas as gpd
 import skmob
-import skmob.measures.individual as ind_measure
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 import torch
 import gpytorch

@@ -16,18 +16,14 @@ from scipy.stats import norm
 def absolute_percentage_error(y_true, y_pred):
     return np.abs((y_true - y_pred) / y_pred)
 
-
 def mean_absolute_percentage_error(y_true, y_pred):
     return np.mean(absolute_percentage_error(y_true, y_pred))
-
 
 def max_absolute_percentage_error(y_true, y_pred):
     return np.max(absolute_percentage_error(y_true, y_pred))
 
-
 def total_absolute_percentage_error(y_true, y_pred):
     return np.sum(absolute_percentage_error(y_true, y_pred))
-
 
 def evaluate(y_true, y_pred):
     return {
@@ -248,67 +244,3 @@ def calculateMetricsAlt(pred_np, std_dev, y_test, lat_tc, verbose=True):
             'CL': sim['CL'],
             'DTW': sim['DTW']
             }
-
-def allMetrics(i, 
-               n_train, 
-               n_test, 
-               STMTGP):
-    return {
-        'UID': i, 
-        'n_train': n_train,
-        'n_test': n_test,
-        # 'temp_train_runtime': STMTGP.runtime_TS,
-        # 'temp_pred_runtime': STMTGP.runtime_TS_pred,
-        # 'temp_rmse_lat': STMTGP.temp_rmse_lat,
-        # 'temp_rmse_lng': STMTGP.temp_rmse_lng,
-        # 'temp_mae_lat': STMTGP.temp_mae_lat,
-        # 'temp_mae_lng': STMTGP.temp_mae_lng,
-        # 'temp_nlpd': STMTGP.temp_nlpd,
-        # 'temp_msll_lat': STMTGP.temp_msll_lat,
-        # 'temp_msll_lng': STMTGP.temp_msll_lng,
-        # 'temp_pcm': STMTGP.temp_pcm, 
-        # 'temp_df': STMTGP.temp_df, 
-        # 'temp_area': STMTGP.temp_area,
-        # 'temp_cl': STMTGP.temp_cl, 
-        # 'temp_dtw': STMTGP.temp_dtw,
-        # 'phys_train_runtime': STMTGP.runtime_PS,
-        # 'phys_pred_runtime': STMTGP.runtime_PS_pred,
-        # 'phys_rmse_lat': STMTGP.phys_rmse_lat,
-        # 'phys_rmse_lng': STMTGP.phys_rmse_lng,
-        # 'phys_mae_lat': STMTGP.phys_mae_lat,
-        # 'phys_mae_lng': STMTGP.phys_mae_lng,
-        # 'phys_nlpd': STMTGP.phys_nlpd,
-        # 'phys_msll_lat': STMTGP.phys_msll_lat,
-        # 'phys_msll_lng': STMTGP.phys_msll_lng,
-        # 'phys_pcm': STMTGP.phys_pcm,
-        # 'phys_df': STMTGP.phys_df,
-        # 'phys_area': STMTGP.phys_area,
-        # 'phys_cl': STMTGP.phys_cl,
-        # 'phys_dtw': STMTGP.phys_dtw,
-        # 'fantasy_rmse_lat': STMTGP.fantasy_rmse_lat,
-        # 'fantasy_rmse_lng': STMTGP.fantasy_rmse_lng,
-        # 'fantasy_mae_lat': STMTGP.fantasy_mae_lat,
-        # 'fantasy_mae_lng': STMTGP.fantasy_mae_lng,
-        # 'fantasy_nlpd': STMTGP.fantasy_nlpd,
-        # 'fantasy_msll_lat': STMTGP.fantasy_msll_lat,
-        # 'fantasy_msll_lng': STMTGP.fantasy_msll_lng,
-        # 'fantasy_pcm': STMTGP.fantasy_pcm,
-        # 'fantasy_df': STMTGP.fantasy_df,
-        # 'fantasy_area': STMTGP.fantasy_area,
-        # 'fantasy_cl': STMTGP.fantasy_cl,
-        # 'fantasy_dtw': STMTGP.fantasy_dtw,
-        'full_train_runtime': STMTGP.runtime_full,
-        'full_pred_runtime': STMTGP.runtime_full_pred,
-        'full_rmse_lat': STMTGP.full_rmse_lat,
-        'full_rmse_lng': STMTGP.full_rmse_lng,
-        'full_mae_lat': STMTGP.full_mae_lat,
-        'full_mae_lng': STMTGP.full_mae_lng,
-        'full_nlpd': STMTGP.full_nlpd,
-        'full_msll_lat': STMTGP.full_msll_lat,
-        'full_msll_lng': STMTGP.full_msll_lng,
-        'full_pcm': STMTGP.full_pcm,
-        'full_df': STMTGP.full_df,
-        'full_area': STMTGP.full_area,
-        'full_cl': STMTGP.full_cl,
-        'full_dtw': STMTGP.full_dtw
-        }
