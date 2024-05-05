@@ -5,3 +5,4 @@
 *.p linguist-detectable=false
 *.plot linguist-detectable=false
 *.plt linguist-detectable=false
+.geolife/** linguist-vendored
