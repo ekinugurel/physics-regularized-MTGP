@@ -1,6 +1,6 @@
 # Learning to generate synthetic human mobility data: A physics-regularized Gaussian process approach based on multiple kernel learning
-### Ekin Uğurel, Shuai Huang, Cynthia Chen
-### *Accepted for podium presentation at the International Symposium on Transportation and Traffic Theory (ISTTT) 25*
+### Ekin Uğurel, Shuai Huang, Cynthia Chen, *Transportation Research Part B: Methodological*, 2024, 103064.
+#### *Podium presentation at the International Symposium on Transportation and Traffic Theory (ISTTT) 25*
 
 This repo contains object classes, helper functions, and other codes pertinent to the above-referenced paper. 
 <div align='center'>
